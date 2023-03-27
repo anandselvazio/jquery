@@ -1,0 +1,244 @@
+﻿/*body {
+    background: radial-gradient(103.7% 50.65% at 50% 14.9%, #FFFFFF 0%, #FDF4D2 0%, #FCE79C 27.89%, #F8CD31 51.04%, rgba(242, 110, 73, 0) 100%), linear-gradient(199.94deg, #F8D62E 10.06%, #FB7D4E 63.03%, #D33938 85.93%);
+}*/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    
+    background: radial-gradient(127.46% 62.18% at 97% 30.9%, rgb(255, 255, 255) 0%, rgb(253, 244, 210) 0%, rgb(252, 231, 156) 27.89%, rgb(248, 205, 49) 51.84%, rgb(242, 110, 73) 100%);
+}
+
+.box {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container.page-content {
+    display: table-row;
+    height: 100%;
+}
+
+.footer-container {
+    display: table-row;
+}
+
+footer {
+    /* Footer */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 22px 40px;
+    gap: 10px;
+
+    width: 100%;
+    height: 60px;
+
+    /* Shades/White */
+    background: #FFFFFF;
+
+    flex: 0 1 60px;
+}
+
+footer div {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.footer-left {
+    /* Label 3 */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-right {
+    float: right;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Shades/Text */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.footer-right .version-number {
+    font-weight: 400;
+}
+
+.page-login {
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.page-login .login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    width: 463px;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.page-login #login-card {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.page-login .logo-container {
+    width: 100%;
+    text-align: center;
+}
+
+.page-login .login-text {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #292929;
+    margin: 50px auto;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 14px 40px;
+    gap: 8px;
+    border: 0px;
+}
+
+.btn-primary {
+    background-color: #D8343A;
+}
+
+.page-login .adfs-login .btn.btn-primary {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFF;
+}
+
+.page-login .login-separator {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 40px auto 20px auto;
+ }
+
+ .page-login .login-separator .inline {
+    width: 45%;
+ }
+
+ .page-login .login-separator .login-separator-text {
+    margin: 0 auto;
+ }
+
+ .page-login .login-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .page-login .login-label-text {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 22px;
+     color: #292929;
+   }
+
+  .page-login .login-form input {
+    height: 48px;
+    padding: 10px 8px;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #767676;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .page-login .login-form #forgot-password {
+    width: 100px;
+    height: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #292929;
+    float: right;
+    text-decoration: none;
+  }
+
+  .page-login .login-form .login-submit {
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 40px;
+    gap: 8px;
+    height: 48px;
+    border: 1px solid #D0343A;
+    border-radius: 6px;
+    background-color: white;
+    color: #D0343A;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+ }

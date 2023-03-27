@@ -1,0 +1,471 @@
+.validation-summary-error ul {
+    list-style-type: none;
+    margin-left: -40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.otp-field-icon {
+    float: right;
+    padding-right: 12px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(255,255,255,0.8) url("/images/ajax-loader.gif") center no-repeat; /* http://www.ajaxload.info/ */
+}
+
+/* Turn off scrollbar when content element has the loading class */
+.loading {
+    overflow: hidden;
+}
+
+/* Make spinner image visible when content class has the loading class */
+.loading .loader {
+    display: block;
+}
+
+#whitelist-success-alert:empty {
+    display: none;
+}
+
+.topbar {
+    /* Header */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 58px;
+
+    /* Shades/White */
+    background: #FFFFFF;
+}
+
+.topbar a.simple-text.logo-normal {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.topbar a.simple-text.logo-normal img {
+     width: 47px;
+     margin-right: 10px;
+}
+
+.topbar a.simple-text.logo-normal span {
+     /* PACS Portal */
+ 
+     /* Label/SemiBold 2 */
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 21px;
+     line-height: 29px;
+ 
+     /* identical to box height */
+ 
+     /* Shades/Text */
+     color: #292929 !important;
+}
+
+.topbar .profile a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.topbar .profile a img {
+    margin-right: 8px;
+    width: 24px;
+}
+
+.topbar .profile a span {
+    /* Label/SemiBold 4 */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.profilebox {
+    /* Profile */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 265px;
+    right: 50px;
+    top: 67px;
+
+    /* Greys/Background */
+    /* background: #F8F8F8; */
+
+    /* Greys/Disabled Buttons BG */
+    border: 1px solid #E6E6E6;
+
+    /* Main shadow */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+}
+
+.profilebox .card-header {
+    /* User frame */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 14px;
+    gap: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.profilebox .card-header img {
+    width: 45px;
+}
+
+.profilebox .card-header .details .name {
+    /* Nathan Meyer */
+
+    /* Header/5 Bold */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.profilebox .card-header .details .email {
+    /* nathan.meyer@pa.gov.sg */
+
+    /* Body/4 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+
+    /* Greys/300 */
+    color: #767676;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.profilebox .card-body {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+}
+
+.profilebox .card-body .menu-item {
+    border-top: 1px solid #E6E6E6;
+    width: 100%;
+}
+
+.profilebox .card-body .menu-item a {
+    /* Change password */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+
+    width: 100%;
+    text-decoration: none;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.profilebox .card-body .menu-item a img {
+    margin-right: 10px;
+}
+
+.profilebox .card-body .menu-item a span {
+    /* Change password */
+
+    /* Label/SemiBold 5 */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.sidebar {
+    /* Nav-master */
+
+    /* Auto layout */
+    padding: 54px 58px;
+    padding-top: 0;
+    gap: 10px;
+
+    /* Shades/White */
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+}
+
+.sidebar .sidebar-wrapper {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.sidebar .sidebar-wrapper.last {
+    border-bottom: 0;
+}
+
+.sidebar .sidebar-wrapper .sidebar-header {
+    /* Label/SemiBold 4 */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.sidebar .sidebar-wrapper .sidebar-item a {
+    padding: 12px 12px 12px 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.sidebar .sidebar-wrapper .sidebar-item a img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.sidebar .sidebar-wrapper .sidebar-item span {
+    /* Body/3 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.sidebar .sidebar-wrapper .sidebar-item:hover {
+    background: #F8F8F8;
+}
+
+.sidebar .sidebar-wrapper .sidebar-item:hover span {
+    color: #D0343A;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+}
+
+.box {    
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.box .topbarbox {
+}
+
+.box .maincontentbox {
+}
+
+.box .maincontentbox .maincontentgrid {
+    display: grid;
+    grid-template-columns: 319px 1fr;
+    height: 100%;
+}
+
+.box .maincontentbox .maincontentgrid .main-panel-grid {
+    display: grid;
+    grid-template-rows: 1fr 60px;
+    height: 100%;
+    width: 100%;
+}
+
+.main-panel {
+    /* Body col with footer */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+
+    width: 100%;
+
+    background: #FAFAFA;
+
+    /* Greys/Disabled Buttons BG */
+    border: 1px solid #E6E6E6;
+    border-radius: 40px 0px 0px 0px;
+    overflow: hidden;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+footer {
+    /* Footer */
+
+    /* Auto layout */
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 22px 40px;
+    gap: 10px;
+
+    height: 60px;
+
+    /* Shades/White */
+    background: #FFFFFF;
+
+    flex: 0 1 60px;
+}
+
+footer div {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.footer-left {
+    /* Label 3 */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-right {
+    float: right;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Shades/Text */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.footer-right .version-number {
+    font-weight: 400;
+}

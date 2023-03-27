@@ -1,0 +1,107 @@
+.dashboard-header {
+    background: linear-gradient(271.07deg, #F8D62E -13.69%, #FB7D4E 93.32%, #D33938 112.19%);
+    height: 284px;
+    padding: 40px 30px;
+}
+
+.dashboard-header .welcome-text {
+    margin-bottom: 60px;
+}
+
+.dashboard-header .welcome-text span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+
+    /* Shades/White */
+    color: #FFFFFF;
+}
+
+.dashboard-header .message span {
+    /* Body/1 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    /* identical to box height */
+
+    /* Shades/White */
+    color: #FFFFFF;
+}
+
+.dashboard-body {
+    margin-top: -63px;
+    padding: 0 40px;
+}
+
+.card.dashboard-item {
+    width: 500px;
+    height: 126px;
+    background-color: white;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card.dashboard-item .card-body {
+    padding: 0;
+}
+
+.card.dashboard-item a {
+    text-decoration: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card.dashboard-item .item {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+}
+
+.card.dashboard-item .item .item-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card.dashboard-item .item .item-name img {
+    margin-right: 10px;
+}
+
+.card.dashboard-item .item .item-name span {
+    /* Body/1 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.card.dashboard-item .item .item-count span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.card.dashboard-item .item .item-count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}

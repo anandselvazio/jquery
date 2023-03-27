@@ -1,0 +1,144 @@
+.breadcrumbs {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 40px;
+    gap: 10px;
+
+    width: 100%;
+    height: 54px;
+
+    /* Shades/White */
+    background: #FFFFFF;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+}
+
+.breadcrumbs .breadcrumbs-item, 
+.breadcrumbs .breadcrumbs-separator {
+    /* Body/3 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.breadcrumbs .breadcrumbs-item.current {
+    font-weight: 600;
+}
+
+.page {
+    background: #FAFAFA;
+}
+
+.page .page-header {
+    margin: 40px;
+}
+
+.page .page-header span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+
+    /* Shades/Text */
+    color: #292929;
+
+    max-width: 879px;
+    display: block;
+    overflow-wrap: break-word;
+}
+
+.page .page-body {
+    margin: 0px 35px;
+}
+
+.page .page-body .page-item {
+    margin: 5px;    
+    width: 365px;
+}
+
+.item {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr 24px;
+}
+
+.item a {
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.item a .item-name span {
+    /* Header/3 Bold */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+
+    /* Primary/Corporate Red/600 */
+    color: #D0343A;
+}
+
+.item .item-type {
+    border-top: 1px solid #E6E6E6;
+}
+
+.item .item-type .header {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.item .item-type .header span {
+    /* Header/5 Bold */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.item .item-type .value span {
+    /* Body/3 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Greys/500 */
+    color: #494949;
+}
+
+.item .item-options {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.item .item-options img {
+    width: 24px;
+}

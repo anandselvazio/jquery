@@ -1,0 +1,262 @@
+.breadcrumbs {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 40px;
+    gap: 10px;
+
+    width: 100%;
+    height: 54px;
+
+    /* Shades/White */
+    background: #FFFFFF;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+}
+
+.breadcrumbs .breadcrumbs-item,
+.breadcrumbs .breadcrumbs-separator {
+    /* Body/3 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.breadcrumbs .breadcrumbs-item.current {
+    font-weight: 600;
+}
+
+.page {
+    background: #FAFAFA;
+}
+
+.page .page-header {
+    margin: 40px;
+}
+
+.page .page-header span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+
+    /* Shades/Text */
+    color: #292929;
+
+    max-width: 879px;
+    display: block;
+    overflow-wrap: break-word;
+}
+
+.page .page-body {
+    margin: 0px 35px;
+}
+
+.page .page-body .page-item {
+    margin: 5px;
+    width: 365px;
+}
+
+.item {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr 24px;
+}
+
+.item a {
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.item a .item-name span {
+    /* Header/3 Bold */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+
+    /* Primary/Corporate Red/600 */
+    color: #D0343A;
+}
+
+.item .item-type {
+    border-top: 1px solid #E6E6E6;
+}
+
+.item .item-type .header {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.item .item-type .header span {
+    /* Header/5 Bold */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Shades/Text */
+    color: #292929;
+}
+
+.item .item-type .value span {
+    /* Body/3 Regular */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    /* Greys/500 */
+    color: #494949;
+}
+
+.item .item-options {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.item .item-options img {
+    width: 24px;
+}
+
+.page-body .edit-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-body .edit-label-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292929;
+}
+
+.page-body .edit-form input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 8px;
+    gap: 10px;
+    width: 365px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #767676;
+    border-radius: 6px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.page-body .button-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 0px 0px;
+    gap: 10px;
+    width: 1200px;
+    height: 72px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.page-body .button-layout .back-save {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 40px;
+    gap: 8px;
+    width: 129px;
+    height: 48px;
+    border-radius: 6px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.page-body .button-layout .back {
+    border: 1px solid #D0343A;
+    background: white;
+    color: #D0343A;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+
+}
+
+.page-body .button-layout .save {
+    background: #D0343A;
+}
+
+.page-body .radio-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 365px;
+    height: 56px;
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 4;
+}
+
+.page-body .radio-form label {
+    width: 124px;
+    left: 0px;
+    top: 0%;
+    bottom: 8.33%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292929;
+}
+
+.page-body .radio-form .otp-radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 73px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
